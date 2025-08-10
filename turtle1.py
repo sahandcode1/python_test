@@ -1,0 +1,30 @@
+import turtle
+
+t = turtle.Turtle()
+s = turtle.Screen()
+
+t.speed(1)
+s.bgcolor("black")
+
+t.penup()
+t.goto(-100, 100)
+t.pendown()
+t.color("lightgreen")
+t.begin_fill()
+
+t.goto(100, 100)
+t.goto(100, -100)
+t.goto(-100, -100)
+t.goto(-100, 100)
+t.end_fill()
+
+t.color("black")
+t.goto(0, 100)
+t.color("black")
+t.width(10)
+t.goto(0, -100)
+
+t.penup()
+t.goto(100, 0)
+t.pendown()
+t.goto(-100, 0)
